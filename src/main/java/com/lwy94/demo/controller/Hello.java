@@ -14,8 +14,11 @@ public class Hello {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
-    public String hello(@RequestParam(value = "hello", required = true) String hello ) {
+    public String hello(@RequestParam(value = "hello") String hello ) {
         System.out.println("hello world" + hello);
+        for (int i = 0; i < 100; i++) {
+            System.out.println("love u " + i + "times");
+        }
         return "wooooooo" + hello;
     }
 }
