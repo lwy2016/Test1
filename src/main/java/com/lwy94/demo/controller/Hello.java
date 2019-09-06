@@ -18,7 +18,7 @@ public class Hello {
     public String hello(@RequestParam(value = "hello") String hello ) {
         System.out.println("hello world" + hello);
         for (int i = 0; i < 100; i++) {
-            System.out.println("love u " + i + "times");
+            System.out.println("change one times.");
         }
 
         int[] arr = {1,43,455,2,42,5,12,2,41,4,14};
